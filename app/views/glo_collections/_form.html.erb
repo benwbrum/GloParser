@@ -1,0 +1,21 @@
+<%= form_for(@glo_collection) do |f| %>
+  <% if @glo_collection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@glo_collection.errors.count, "error") %> prohibited this glo_collection from being saved:</h2>
+
+      <ul>
+      <% @glo_collection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

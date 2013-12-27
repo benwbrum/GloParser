@@ -1,0 +1,57 @@
+<%= form_for(@glo_record) do |f| %>
+  <% if @glo_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@glo_record.errors.count, "error") %> prohibited this glo_record from being saved:</h2>
+
+      <ul>
+      <% @glo_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :glo_id %><br>
+    <%= f.number_field :glo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :abstract_url %><br>
+    <%= f.text_field :abstract_url %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_name %><br>
+    <%= f.text_field :collection_name %>
+  </div>
+  <div class="field">
+    <%= f.label :file_url %><br>
+    <%= f.text_field :file_url %>
+  </div>
+  <div class="field">
+    <%= f.label :file_number %><br>
+    <%= f.text_field :file_number %>
+  </div>
+  <div class="field">
+    <%= f.label :grantee %><br>
+    <%= f.text_field :grantee %>
+  </div>
+  <div class="field">
+    <%= f.label :patentee %><br>
+    <%= f.text_field :patentee %>
+  </div>
+  <div class="field">
+    <%= f.label :pdf_url %><br>
+    <%= f.text_field :pdf_url %>
+  </div>
+  <div class="field">
+    <%= f.label :remarks %><br>
+    <%= f.text_field :remarks %>
+  </div>
+  <div class="field">
+    <%= f.label :glo_collection %><br>
+    <%= f.text_field :glo_collection %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

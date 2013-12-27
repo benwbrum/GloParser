@@ -1,0 +1,45 @@
+<h1>Listing glo_records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Glo</th>
+      <th>Abstract url</th>
+      <th>Collection name</th>
+      <th>File url</th>
+      <th>File number</th>
+      <th>Grantee</th>
+      <th>Patentee</th>
+      <th>Pdf url</th>
+      <th>Remarks</th>
+      <th>Glo collection</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @glo_records.each do |glo_record| %>
+      <tr>
+        <td><%= glo_record.glo_id %></td>
+        <td><%= glo_record.abstract_url %></td>
+        <td><%= glo_record.collection_name %></td>
+        <td><%= glo_record.file_url %></td>
+        <td><%= glo_record.file_number %></td>
+        <td><%= glo_record.grantee %></td>
+        <td><%= glo_record.patentee %></td>
+        <td><%= glo_record.pdf_url %></td>
+        <td><%= glo_record.remarks %></td>
+        <td><%= glo_record.glo_collection %></td>
+        <td><%= link_to 'Show', glo_record %></td>
+        <td><%= link_to 'Edit', edit_glo_record_path(glo_record) %></td>
+        <td><%= link_to 'Destroy', glo_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Glo record', new_glo_record_path %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  glo_id: 1
+  abstract_url: MyString
+  collection_name: MyString
+  file_url: MyString
+  file_number: MyString
+  grantee: MyString
+  patentee: MyString
+  pdf_url: MyString
+  remarks: MyString
+  glo_collection_id: 
+
+two:
+  glo_id: 1
+  abstract_url: MyString
+  collection_name: MyString
+  file_url: MyString
+  file_number: MyString
+  grantee: MyString
+  patentee: MyString
+  pdf_url: MyString
+  remarks: MyString
+  glo_collection_id: 

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Glo:</strong>
+  <%= @glo_record.glo_id %>
+</p>
+
+<p>
+  <strong>Abstract url:</strong>
+  <%= @glo_record.abstract_url %>
+</p>
+
+<p>
+  <strong>Collection name:</strong>
+  <%= @glo_record.collection_name %>
+</p>
+
+<p>
+  <strong>File url:</strong>
+  <%= @glo_record.file_url %>
+</p>
+
+<p>
+  <strong>File number:</strong>
+  <%= @glo_record.file_number %>
+</p>
+
+<p>
+  <strong>Grantee:</strong>
+  <%= @glo_record.grantee %>
+</p>
+
+<p>
+  <strong>Patentee:</strong>
+  <%= @glo_record.patentee %>
+</p>
+
+<p>
+  <strong>Pdf url:</strong>
+  <%= @glo_record.pdf_url %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @glo_record.remarks %>
+</p>
+
+<p>
+  <strong>Glo collection:</strong>
+  <%= @glo_record.glo_collection %>
+</p>
+
+<%= link_to 'Edit', edit_glo_record_path(@glo_record) %> |
+<%= link_to 'Back', glo_records_path %>

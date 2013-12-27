@@ -32,6 +32,17 @@ def parse(filename)
       patentee = cells[5].text
   
       pdf_url = cells[6].xpath('./b/a').first.attr('href')
+      
+      GloRecord.create!({ 
+        :glo_id => glo_id, 
+        :abstract_url => abstract_url, 
+        :collection_name => collection_name, 
+        :file_url => file_url,
+        :file_number => file_number,
+        :grantee => grantee,
+        :patentee => patentee,
+        :pdf_url => pdf_url
+        })
       print "Parsed #{glo_id}, #{file_url}\n"
     end
   end

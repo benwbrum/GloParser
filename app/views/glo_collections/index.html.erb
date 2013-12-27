@@ -1,0 +1,27 @@
+<h1>Listing glo_collections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @glo_collections.each do |glo_collection| %>
+      <tr>
+        <td><%= glo_collection.name %></td>
+        <td><%= link_to 'Show', glo_collection %></td>
+        <td><%= link_to 'Edit', edit_glo_collection_path(glo_collection) %></td>
+        <td><%= link_to 'Destroy', glo_collection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Glo collection', new_glo_collection_path %>
