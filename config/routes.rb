@@ -1,4 +1,8 @@
 GloParser::Application.routes.draw do
+  resources :tx_land_grants_efns
+
+  resources :tx_land_grants_special_collections
+
   resources :glo_records
 
   resources :glo_collections

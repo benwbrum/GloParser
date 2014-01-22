@@ -1,0 +1,35 @@
+<h1>Listing tx_land_grants_efns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field note</th>
+      <th>Control</th>
+      <th>Pdf exists</th>
+      <th>File no</th>
+      <th>Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tx_land_grants_efns.each do |tx_land_grants_efn| %>
+      <tr>
+        <td><%= tx_land_grants_efn.field_note %></td>
+        <td><%= tx_land_grants_efn.control %></td>
+        <td><%= tx_land_grants_efn.pdf_exists %></td>
+        <td><%= tx_land_grants_efn.file_no %></td>
+        <td><%= tx_land_grants_efn.record_type %></td>
+        <td><%= link_to 'Show', tx_land_grants_efn %></td>
+        <td><%= link_to 'Edit', edit_tx_land_grants_efn_path(tx_land_grants_efn) %></td>
+        <td><%= link_to 'Destroy', tx_land_grants_efn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tx land grants efn', new_tx_land_grants_efn_path %>

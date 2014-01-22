@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  field_note: MyString
+  control: 
+  pdf_Exists: MyString
+  file_no: MyString
+  type: 
+
+two:
+  field_note: MyString
+  control: 
+  pdf_Exists: MyString
+  file_no: MyString
+  type: 

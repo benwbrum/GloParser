@@ -1,0 +1,169 @@
+<%= form_for(@tx_land_grants_special_collection) do |f| %>
+  <% if @tx_land_grants_special_collection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tx_land_grants_special_collection.errors.count, "error") %> prohibited this tx_land_grants_special_collection from being saved:</h2>
+
+      <ul>
+      <% @tx_land_grants_special_collection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :control %><br>
+    <%= f.number_field :control %>
+  </div>
+  <div class="field">
+    <%= f.label :glo_id %><br>
+    <%= f.number_field :glo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :district %><br>
+    <%= f.text_field :district %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br>
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :page %><br>
+    <%= f.text_field :page %>
+  </div>
+  <div class="field">
+    <%= f.label :abstract %><br>
+    <%= f.number_field :abstract %>
+  </div>
+  <div class="field">
+    <%= f.label :abstract2 %><br>
+    <%= f.text_field :abstract2 %>
+  </div>
+  <div class="field">
+    <%= f.label :orig_grantee %><br>
+    <%= f.text_field :orig_grantee %>
+  </div>
+  <div class="field">
+    <%= f.label :certificate %><br>
+    <%= f.text_field :certificate %>
+  </div>
+  <div class="field">
+    <%= f.label :patentee %><br>
+    <%= f.text_field :patentee %>
+  </div>
+  <div class="field">
+    <%= f.label :patent_date %><br>
+    <%= f.text_field :patent_date %>
+  </div>
+  <div class="field">
+    <%= f.label :patent_no %><br>
+    <%= f.text_field :patent_no %>
+  </div>
+  <div class="field">
+    <%= f.label :patent_vol %><br>
+    <%= f.text_field :patent_vol %>
+  </div>
+  <div class="field">
+    <%= f.label :part_section %><br>
+    <%= f.text_field :part_section %>
+  </div>
+  <div class="field">
+    <%= f.label :survey_blk_tsp %><br>
+    <%= f.text_field :survey_blk_tsp %>
+  </div>
+  <div class="field">
+    <%= f.label :acres %><br>
+    <%= f.text_area :acres %>
+  </div>
+  <div class="field">
+    <%= f.label :adj_county %><br>
+    <%= f.text_field :adj_county %>
+  </div>
+  <div class="field">
+    <%= f.label :adj_acres %><br>
+    <%= f.text_field :adj_acres %>
+  </div>
+  <div class="field">
+    <%= f.label :class %><br>
+    <%= f.text_field :class %>
+  </div>
+  <div class="field">
+    <%= f.label :file_no %><br>
+    <%= f.text_field :file_no %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :page %><br>
+    <%= f.number_field :page %>
+  </div>
+  <div class="field">
+    <%= f.label :class_prefix %><br>
+    <%= f.text_field :class_prefix %>
+  </div>
+  <div class="field">
+    <%= f.label :class_suffix %><br>
+    <%= f.text_field :class_suffix %>
+  </div>
+  <div class="field">
+    <%= f.label :internal_comment %><br>
+    <%= f.text_field :internal_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :external_comment %><br>
+    <%= f.text_field :external_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_type %><br>
+    <%= f.text_field :collection_type %>
+  </div>
+  <div class="field">
+    <%= f.label :title_date %><br>
+    <%= f.date_select :title_date %>
+  </div>
+  <div class="field">
+    <%= f.label :web_display %><br>
+    <%= f.text_field :web_display %>
+  </div>
+  <div class="field">
+    <%= f.label :doc_adoptable %><br>
+    <%= f.text_field :doc_adoptable %>
+  </div>
+  <div class="field">
+    <%= f.label :acquittance_date %><br>
+    <%= f.text_field :acquittance_date %>
+  </div>
+  <div class="field">
+    <%= f.label :acquitttance_no %><br>
+    <%= f.text_field :acquitttance_no %>
+  </div>
+  <div class="field">
+    <%= f.label :acquittance_vol %><br>
+    <%= f.text_field :acquittance_vol %>
+  </div>
+  <div class="field">
+    <%= f.label :acquittance_acres %><br>
+    <%= f.text_field :acquittance_acres %>
+  </div>
+  <div class="field">
+    <%= f.label :pdf_exists %><br>
+    <%= f.text_field :pdf_exists %>
+  </div>
+  <div class="field">
+    <%= f.label :pdf_size_bytes %><br>
+    <%= f.number_field :pdf_size_bytes %>
+  </div>
+  <div class="field">
+    <%= f.label :pdf_dir_date %><br>
+    <%= f.date_select :pdf_dir_date %>
+  </div>
+  <div class="field">
+    <%= f.label :aka %><br>
+    <%= f.text_field :aka %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

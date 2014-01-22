@@ -1,0 +1,101 @@
+<h1>Listing tx_land_grants_special_collections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Control</th>
+      <th>Glo</th>
+      <th>District</th>
+      <th>County</th>
+      <th>Page</th>
+      <th>Abstract</th>
+      <th>Abstract2</th>
+      <th>Orig grantee</th>
+      <th>Certificate</th>
+      <th>Patentee</th>
+      <th>Patent date</th>
+      <th>Patent no</th>
+      <th>Patent vol</th>
+      <th>Part section</th>
+      <th>Survey blk tsp</th>
+      <th>Acres</th>
+      <th>Adj county</th>
+      <th>Adj acres</th>
+      <th>Class</th>
+      <th>File no</th>
+      <th>Comment</th>
+      <th>Page</th>
+      <th>Class prefix</th>
+      <th>Class suffix</th>
+      <th>Internal comment</th>
+      <th>External comment</th>
+      <th>Collection type</th>
+      <th>Title date</th>
+      <th>Web display</th>
+      <th>Doc adoptable</th>
+      <th>Acquittance date</th>
+      <th>Acquitttance no</th>
+      <th>Acquittance vol</th>
+      <th>Acquittance acres</th>
+      <th>Pdf exists</th>
+      <th>Pdf size bytes</th>
+      <th>Pdf dir date</th>
+      <th>Aka</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tx_land_grants_special_collections.each do |tx_land_grants_special_collection| %>
+      <tr>
+        <td><%= tx_land_grants_special_collection.control %></td>
+        <td><%= tx_land_grants_special_collection.glo_id %></td>
+        <td><%= tx_land_grants_special_collection.district %></td>
+        <td><%= tx_land_grants_special_collection.county %></td>
+        <td><%= tx_land_grants_special_collection.page %></td>
+        <td><%= tx_land_grants_special_collection.abstract %></td>
+        <td><%= tx_land_grants_special_collection.abstract2 %></td>
+        <td><%= tx_land_grants_special_collection.orig_grantee %></td>
+        <td><%= tx_land_grants_special_collection.certificate %></td>
+        <td><%= tx_land_grants_special_collection.patentee %></td>
+        <td><%= tx_land_grants_special_collection.patent_date %></td>
+        <td><%= tx_land_grants_special_collection.patent_no %></td>
+        <td><%= tx_land_grants_special_collection.patent_vol %></td>
+        <td><%= tx_land_grants_special_collection.part_section %></td>
+        <td><%= tx_land_grants_special_collection.survey_blk_tsp %></td>
+        <td><%= tx_land_grants_special_collection.acres %></td>
+        <td><%= tx_land_grants_special_collection.adj_county %></td>
+        <td><%= tx_land_grants_special_collection.adj_acres %></td>
+        <td><%= tx_land_grants_special_collection.glo_class %></td>
+        <td><%= tx_land_grants_special_collection.file_no %></td>
+        <td><%= tx_land_grants_special_collection.comment %></td>
+        <td><%= tx_land_grants_special_collection.page %></td>
+        <td><%= tx_land_grants_special_collection.class_prefix %></td>
+        <td><%= tx_land_grants_special_collection.class_suffix %></td>
+        <td><%= tx_land_grants_special_collection.internal_comment %></td>
+        <td><%= tx_land_grants_special_collection.external_comment %></td>
+        <td><%= tx_land_grants_special_collection.collection_type %></td>
+        <td><%= tx_land_grants_special_collection.title_date %></td>
+        <td><%= tx_land_grants_special_collection.web_display %></td>
+        <td><%= tx_land_grants_special_collection.doc_adoptable %></td>
+        <td><%= tx_land_grants_special_collection.acquittance_date %></td>
+        <td><%= tx_land_grants_special_collection.acquittance_no %></td>
+        <td><%= tx_land_grants_special_collection.acquittance_vol %></td>
+        <td><%= tx_land_grants_special_collection.acquittance_acres %></td>
+        <td><%= tx_land_grants_special_collection.pdf_exists %></td>
+        <td><%= tx_land_grants_special_collection.pdf_size_bytes %></td>
+        <td><%= tx_land_grants_special_collection.pdf_dir_date %></td>
+        <td><%= tx_land_grants_special_collection.aka %></td>
+        <td><%= link_to 'Show', tx_land_grants_special_collection %></td>
+        <td><%= link_to 'Edit', edit_tx_land_grants_special_collection_path(tx_land_grants_special_collection) %></td>
+        <td><%= link_to 'Destroy', tx_land_grants_special_collection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tx land grants special collection', new_tx_land_grants_special_collection_path %>
